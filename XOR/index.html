@@ -5,14 +5,17 @@
           async function loadModel(){ 
               model = await tf.loadModel('web_model/model.json') 
               y = model.predict(tf.zeros([1,2])) 
-              console.log(y)
-              document.getElementById('out').innerHTML = y.dataSync()[0] 
+              a = 33
+              document.getElementById('out').innerHTML = y.dataSync()[0]
+              document.getElementById('test).innerHTML = a
           } 
           loadModel() 
 </script>
 </head> 
 <body>
-        <p id ='out'></p> 
+          "YES"
+          <p id = 'test' > </p>
+          <p id ='out'></p> 
 </body>
 
 </html>
