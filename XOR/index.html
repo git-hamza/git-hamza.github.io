@@ -2,15 +2,19 @@
 
 <head><script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.0"> </script>
 <script>
+  async function infer(){
               model = await tf.loadModel('web_model/model.json') 
               y = model.predict(tf.zeros([1,2])) 
               a = 33
               document.getElementById('out').innerHTML = y.dataSync()[0]
               document.getElementById('test).innerHTML = a
+              }
+              infer()
+                                    
 </script>
 </head> 
 <body>
-          "YNO"
+          "YNOsdac"
           <p id = 'test' > </p>
           <p id ='out'></p> 
 </body>
