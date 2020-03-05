@@ -2,13 +2,16 @@
 <script>
           async function loadModel(){ 
               model = await tf.loadModel('web_model/model.json') 
-              y = model.predict([0,1]) 
+              y = model.predict(tf.zeros([1,2]))
               a = tf.zeros([1,2])
-              document.getElementById('out').innerHTML = a
+              document.getElementById('out').innerHTML = y.dataSync()[0] 
+              ocument.getElementById('test').innerHTML = a
           } 
           loadModel() 
 </script>
 </head> 
 <body>
-        <p id ='out'></p> 
+        "EA"
+        <p id ='out'></p>
+        <p id ='test'></p>
 </body>
