@@ -15,7 +15,7 @@ $("#image-selector").change(function () {
 
 let model;
 (async function () {
-    model = await tf.loadModel("models/Mobnet/model.json");
+    model = await tf.loadModel("models/VGG16/model.json");
     $(".progress-bar").hide();
 })();
 
