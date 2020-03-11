@@ -59,7 +59,7 @@ $("#predict-button").click(async function () {
 	
 	//Getting a prediction
 
-	let predictions = await model.predict(tensor).data();
+	let predictions = await model.predict(processedTensor).data();
 	let top5 = Array.from(predictions)
 	    .map(function (p, i) {
 	        return {
