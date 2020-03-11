@@ -107,4 +107,4 @@ function preprocessImage(image, modelName) {
 	else {
 	    throw new Error("Unknown model name");
 	}
-
+}
